@@ -100,7 +100,6 @@ function NavBar({ scroll }) {
 
     const scrollAndCloseDrawer = (e) => {
         scroll(e)
-        // setOpen(false)
     }
     return (
         <>
@@ -109,6 +108,7 @@ function NavBar({ scroll }) {
                     <ListItem button onClick={() => scrollAndCloseDrawer('Home')}>
                         <ListItemText>Top</ListItemText>
                     </ListItem>
+                    <Divider />
                     <ListItem button onClick={() => scrollAndCloseDrawer('About')}>
                         <ListItemText>About</ListItemText>
                     </ListItem>
@@ -117,7 +117,7 @@ function NavBar({ scroll }) {
                         <ListItemText>Skills</ListItemText>
                     </ListItem>
                     <Divider />
-                    <ListItem button onClick={() => scrollAndCloseDrawer('Project')}>
+                    <ListItem button onClick={() => scrollAndCloseDrawer('Projects')}>
                         <ListItemText>Project</ListItemText>
                     </ListItem>
                     <Divider />

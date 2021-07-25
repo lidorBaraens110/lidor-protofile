@@ -117,7 +117,6 @@ const useStyles = makeStyles(theme => ({
     }
 }))
 function Projects({ scrollTo }) {
-    console.log(data)
     const classes = useStyles()
     const theme = useTheme();
     const mobileView = useMediaQuery(theme.breakpoints.down('xs'))

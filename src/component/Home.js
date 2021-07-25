@@ -80,6 +80,12 @@ const useStyles = makeStyles(theme => ({
         '&:hover': {
             color: 'orange'
         }
+    },
+    wrapImg: {
+        flex: 1, height: '6rem', position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center'
+    },
+    img: {
+        height: '100%', width: 'auto', borderRadius: '50% '
     }
 }))
 
@@ -96,15 +102,14 @@ function Home(props) {
                 <Typography className={classes.subTitle}>Full Stack Developer</Typography>
                 <Link href='https://firebasestorage.googleapis.com/v0/b/e-commerce-83126.appspot.com/o/lidor%20resume.pdf?alt=media&token=920e33ab-a946-44a7-acf9-ea7f3a5a4e93'>
                     <Button className={classes.button}>
-
                         Download CV
                     </Button>
                 </Link>
 
             </div>
             {mobileView &&
-                <div style={{ flex: 1, height: '6rem', position: 'relative' }}>
-                    <img src={ProfileImg} style={{ height: '100%', width: 'auto', borderRadius: '50% ' }} />
+                <div className={classes.wrapImg}>
+                    <img src={ProfileImg} className={classes.img} />
                 </div>
             }
             <div className={classes.rightSide}>

@@ -8,9 +8,6 @@ import Projects from './component/Projects';
 import Contact from './component/Contact';
 import React, { useRef } from 'react';
 
-
-
-
 function App() {
   const aboutRef = useRef();
   const homeRef = useRef();
@@ -19,7 +16,6 @@ function App() {
   const contactRef = useRef();
 
   const scrollTo = (e) => {
-    console.log(e)
     switch (e) {
       case 'Home':
         return homeRef.current.scrollIntoView({ behavior: 'smooth' })
